@@ -1,0 +1,245 @@
+<html>
+ <head>
+  <title>
+   Untitled form
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3e8fd;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+        }
+        .header img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 20px;
+            margin: 0;
+            flex-grow: 1;
+        }
+        .header .star {
+            color: #5f6368;
+            margin-right: 20px;
+        }
+        .header .send-button {
+            background-color: #673ab7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .header .send-button:hover {
+            background-color: #5e35b1;
+        }
+        .header .profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .header .profile img {
+            width: 100%;
+            height: 100%;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+        }
+        .nav a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #5f6368;
+            font-weight: bold;
+        }
+        .nav a.active {
+            color: #673ab7;
+            border-bottom: 3px solid #673ab7;
+        }
+        .form-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .form-header {
+            border-bottom: 2px solid #673ab7;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .form-header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .form-header p {
+            color: #5f6368;
+            margin: 5px 0 0;
+        }
+        .form-question {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .form-question h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .form-question .options {
+            margin-top: 10px;
+        }
+        .form-question .options label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-question .options input[type="radio"] {
+            margin-right: 10px;
+        }
+        .form-question .add-option {
+            color: #673ab7;
+            cursor: pointer;
+        }
+        .form-question .add-option:hover {
+            text-decoration: underline;
+        }
+        .form-question .question-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .form-question .question-footer .required-toggle {
+            display: flex;
+            align-items: center;
+        }
+        .form-question .question-footer .required-toggle input {
+            margin-right: 10px;
+        }
+        .form-question .question-footer .actions {
+            display: flex;
+            align-items: center;
+        }
+        .form-question .question-footer .actions i {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .form-question .question-footer .actions i:hover {
+            color: #673ab7;
+        }
+        .sidebar {
+            position: fixed;
+            right: 20px;
+            top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar i {
+            font-size: 24px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .sidebar i:hover {
+            color: #673ab7;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <img alt="Google Forms Logo" height="40" src="https://storage.googleapis.com/a1aa/image/2H71CaWpBTZPINM1cG463YcfJP9fDhTXCNhga03Q66KhuFoTA.jpg" width="40"/>
+   <h1>
+    Untitled form
+   </h1>
+   <i class="fas fa-star star">
+   </i>
+   <button class="send-button">
+    Send
+   </button>
+   <div class="profile">
+    <img alt="User Profile Picture" height="40" src="" width="40"/>
+   </div>
+  </div>
+  <div class="nav">
+   <a class="active" href="#">
+    Questions
+   </a>
+   <a href="#">
+    Responses
+   </a>
+   
+   <a href="screen2.html">
+    Settings
+   </a>
+  </div>
+  <div class="form-container">
+   <div class="form-header">
+    <h2>
+     Untitled form
+    </h2>
+    <p>
+     Form description
+    </p>
+   </div>
+   <div class="form-question">
+    <h3>
+     Untitled Question
+    </h3>
+    <div class="options">
+     <label>
+      <input name="question1" type="radio"/>
+      Option 1
+     </label>
+     <label>
+      <input name="question1" type="radio"/>
+      Add option or
+      <span class="add-option">
+       add "Other"
+      </span>
+     </label>
+    </div>
+    <div class="question-footer">
+     <div class="required-toggle">
+      <label>
+       Required
+      </label>
+      <input type="checkbox"/>
+     </div>
+     <div class="actions">
+      <i class="fas fa-copy">
+      </i>
+      <i class="fas fa-trash">
+      </i>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="sidebar">
+   <i class="fas fa-plus">
+   </i>
+   <i class="fas fa-file-alt">
+   </i>
+   <i class="fas fa-font">
+   </i>
+   <i class="fas fa-image">
+   </i>
+   <i class="fas fa-video">
+   </i>
+   <i class="fas fa-ellipsis-v">
+   </i>
+  </div>
+ </body>
+</html>

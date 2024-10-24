@@ -1,0 +1,200 @@
+<html>
+<head>
+    <title>T-Shirt Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3e8fd;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+        .header .title {
+            display: flex;
+            align-items: center;
+        }
+        .header .title i {
+            font-size: 24px;
+            color: #673ab7;
+            margin-right: 10px;
+        }
+        .header .title span {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .header .icons i {
+            font-size: 18px;
+            margin-left: 15px;
+            color: #5f6368;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #5f6368;
+            font-size: 14px;
+            margin: 0 15px;
+            padding-bottom: 5px;
+        }
+        .nav a.active {
+            color: #673ab7;
+            border-bottom: 2px solid #673ab7;
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .form-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #673ab7;
+            padding-bottom: 10px;
+        }
+        .form-header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .form-header .icons i {
+            font-size: 18px;
+            margin-left: 10px;
+            color: #5f6368;
+        }
+        .form-description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #5f6368;
+        }
+        .form-group {
+            margin-top: 20px;
+        }
+        .form-group label {
+            font-size: 16px;
+            color: #202124;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+        }
+        .form-group input:focus {
+            border-color: #673ab7;
+            outline: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <i class="fas fa-file-alt"></i>
+                <span>T-Shirt Sign Up</span>
+            </div>
+            <div class="icons">
+                <i class="fas fa-folder"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="#" class="active">Questions</a>
+            <a href="#">Responses</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <h1>T-Shirt Sign Up</h1>
+                <div class="icons">
+                    <i class="fas fa-bold"></i>
+                    <i class="fas fa-italic"></i>
+                    <i class="fas fa-underline"></i>
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-strikethrough"></i>
+                </div>
+            </div>
+            <div class="form-description">
+                Enter your name and size to sign up for a T-Shirt.
+            </div>
+            <div class="form-group">
+                <label for="name">Name <span style="color: red;">*</span></label>
+                <input type="text" id="name" placeholder="Short answer text">
+                <div>
+                    <div class="form-container">
+                        <div class="form-header">
+                            <h2>Shirt size</h2>
+                            <div class="form-type">
+                                <i class="fas fa-list-ul"></i>
+                                <span>Multiple choice</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="option">
+                                <input type="radio" name="shirt-size" id="size-xs">
+                                <label for="size-xs">XS</label>
+                                <i class="fas fa-times remove-option"></i>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="shirt-size" id="size-s">
+                                <label for="size-s">S</label>
+                                <i class="fas fa-times remove-option"></i>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="shirt-size" id="size-m">
+                                <label for="size-m">M</label>
+                                <i class="fas fa-times remove-option"></i>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="shirt-size" id="size-l">
+                                <label for="size-l">L</label>
+                                <i class="fas fa-times remove-option"></i>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="shirt-size" id="size-xl">
+                                <label for="size-xl">XL</label>
+                                <i class="fas fa-times remove-option"></i>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="shirt-size" id="add-option">
+                                <label for="add-option" class="add-option">Add option</label>
+                                <span>or</span>
+                                <label for="add-other" class="add-option">add "Other"</label>
+                            </div>
+                        </div>
+                        <div class="form-footer">
+                            <div class="required-toggle">
+                                <input type="checkbox" id="required">
+                                <label for="required">Required</label>
+                            </div>
+                            <div class="actions">
+                                <i class="fas fa-copy"></i>
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

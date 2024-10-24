@@ -1,0 +1,180 @@
+<html>
+ <head>
+  <title>
+   T-Shirt Sign Up
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3e8fd;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .header .spacer {
+            flex-grow: 1;
+        }
+        .header .icons {
+            display: flex;
+            align-items: center;
+        }
+        .header .icons i {
+            margin-left: 15px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #ddd;
+            margin-top: 20px;
+        }
+        .tabs div {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .tabs .active {
+            border-bottom: 2px solid #673ab7;
+            color: #673ab7;
+        }
+        .form-section {
+            margin-top: 20px;
+        }
+        .form-section h2 {
+            font-size: 24px;
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #673ab7;
+        }
+        .form-section p {
+            margin: 10px 0;
+            color: #666;
+        }
+        .form-section .form-group {
+            margin-top: 20px;
+        }
+        .form-section .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-section .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-section .form-group input:focus {
+            border-color: #673ab7;
+            outline: none;
+        }
+        .sidebar {
+            position: fixed;
+            right: 20px;
+            top: 100px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        .sidebar i {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+            cursor: pointer;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <img alt="Google Forms Icon" height="40" src="https://storage.googleapis.com/a1aa/image/4R0M0vZ92IrYGFdBUKpcVwgfsIUb67GTQcQtzMHQqjjENfpTA.jpg" width="40"/>
+   <h1>
+    T-Shirt Sign Up
+   </h1>
+   <div class="spacer">
+   </div>
+   <div class="icons">
+    <i class="fas fa-folder">
+    </i>
+    <i class="fas fa-star">
+    </i>
+    <i class="fas fa-eye">
+    </i>
+    <i class="fas fa-undo">
+    </i>
+    <i class="fas fa-redo">
+    </i>
+    <button style="background-color: #673ab7; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">
+     Send
+    </button>
+    <img alt="User Avatar" height="40" src="https://storage.googleapis.com/a1aa/image/GbHASYESOdKrJFEGLOjOzkfBfffhqb5wehVBvXB3XlJTRzPdC.jpg" style="border-radius: 50%; margin-left: 10px;" width="40"/>
+   </div>
+  </div>
+  <div class="container">
+   <div class="tabs">
+    <div class="active">
+     Questions
+    </div>
+    <div>
+     Responses
+    </div>
+    <div>
+     Settings
+    </div>
+   </div>
+   <div class="form-section">
+    <h2>
+     T-Shirt Sign Up
+    </h2>
+    <p>
+     Enter your name and size to sign up for a T-Shirt.
+    </p>
+    <div class="form-group">
+     <label for="name">
+      Name
+      <span style="color: red;">
+       *
+      </span>
+     </label>
+     <input id="name" placeholder="Short answer text" type="text"/>
+    </div>
+   </div>
+  </div>
+  <div class="sidebar">
+   <i class="fas fa-plus-circle">
+   </i>
+   <i class="fas fa-copy">
+   </i>
+   <i class="fas fa-font">
+   </i>
+   <i class="fas fa-image">
+   </i>
+   <i class="fas fa-video">
+   </i>
+   <i class="fas fa-bars">
+   </i>
+  </div>
+ </body>
+</html>
